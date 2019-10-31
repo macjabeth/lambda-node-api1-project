@@ -1,0 +1,31 @@
+@url = http://localhost:4000/api
+
+get {{url}}/users
+
+###
+
+get {{url}}/users/1
+
+###
+
+post {{url}}/users
+content-type: application/json
+
+{
+  "name": "Jonny",
+  "bio": "Web developer"
+}
+
+###
+
+delete {{url}}/users/8
+
+###
+
+put {{url}}/users/9
+content-type: application/json
+
+{
+  "name": "Bunno",
+  "bio": "Likes to hop around"
+}
